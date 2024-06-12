@@ -1,10 +1,10 @@
 ### Creating a Token
 
-This Solidity program is a simple "CREATING A TOKEN " program that demonstrates the basic syntax and functionality of the Solidity programming language. The purpose of this program is to create a token having token name,token abbrivation, total suuply.
+This Solidity program is a simple "CREATING A TOKEN " program that demonstrates the basic syntax and functionality of the Solidity programming language. The purpose of this program is to create a token having token name,token abbreviation, total suply.
 
 ## Description
 
-This program is a simple contract written in Solidity, a programming language used for developing smart contracts on the Ethereum blockchain. The contract has  functions that can mint and one function is there for burn.It has mint function that takes two parameters: an address and a value. The function then increases the total supply by that number and increases the balance of the address by that amount and it has a burn function, which works the opposite of the mint function, as it will destroy tokens. It will take an address and value just like the mint functions. It will then deduct the value from the total supply and from the balance of the address. This program serves as a simple and straightforward introduction to Solidity programming, and can be used as a stepping stone for more complex projects in the future.
+This program is a simple contract written in Solidity, a programming language used for developing smart contracts on the Ethereum blockchain. The contract has  functions that can mint and one function is there for burn.It has mint function that takes two parameters: an address and a value. The function then increases the total supply by that number and increases the balance of the address by that amount. It has a burn function, which works the opposite of the mint function, as it will destroy tokens. It will take an address and value just like the mint functions. It will then deduct the value from the total supply and from the balance of the address. This program serves as a simple and straightforward introduction to Solidity programming, and can be used as a stepping stone for more complex projects in the future.
 
 ## Getting Started
 
