@@ -1,4 +1,4 @@
-Creating a Token
+### Creating a Token
 
 This Solidity program is a simple "CREATING A TOKEN " program that demonstrates the basic syntax and functionality of the Solidity programming language. The purpose of this program is to create a token having token name,token abbrivation, total suuply.
 
@@ -12,17 +12,52 @@ This program is a simple contract written in Solidity, a programming language us
 
 To run this program, you can use Remix, an online Solidity IDE. To get started, go to the Remix website at https://remix.ethereum.org/.
 
-Once you are on the Remix website, create a new file by clicking on the "+" icon in the left-hand sidebar. Save the file with a .sol extension (e.g., MyToken.sol). 
+Once you are on the Remix website, create a new file by clicking on the "+" icon in the left-hand sidebar. Save the file with a .sol extension (e.g., myToken.sol). Copy and paste the following code into the file
+```javascript
+//SPDX-License-Identifier: MIT
+pragma solidity 0.8.26;
+
+contract MyToken
+{
+    //public variables here
+    string public tokenName = "BETA BY GURJOT";
+    string public tokenAbbrivation = "MTA Gurjot of Chandigarh university";
+    uint public totalSupply = 0;
+
+    //mapping variable here
+    mapping(address => uint )public balances;
+
+    //mint function
+    function mint (address _address,uint _value) public
+    {
+        totalSupply = totalSupply + _value;
+        balances[_address] += _value;
+
+    }
+
+    //burn function
+    function burn (address _address,uint _value) public
+    {
+        if(balances[_address] >= _value)
+        {
+        totalSupply = totalSupply - _value;
+        balances[_address] -= _value;
+        }
+
+    }
+}
+
+```
 
 
 
 
 
-To compile the code, click on the "Solidity Compiler" tab in the left-hand sidebar. Make sure the "Compiler" option is set to "0.8.4" (or another compatible version), and then click on the "Compile HelloWorld.sol" button.
+To compile the code, click on the "Solidity Compiler" tab in the left-hand sidebar. Make sure the "Compiler" option is set to "0.8.26" (or another compatible version), and then click on the "Compile myToken.sol" button.
 
-Once the code is compiled, you can deploy the contract by clicking on the "Deploy & Run Transactions" tab in the left-hand sidebar. Select the "HelloWorld" contract from the dropdown menu, and then click on the "Deploy" button.
+Once the code is compiled, you can deploy the contract by clicking on the "Deploy & Run Transactions" tab in the left-hand sidebar. Select the "MyToken" contract from the dropdown menu, and then click on the "Deploy" button.
 
-Once the contract is deployed, you can interact with it by calling the sayHello function. Click on the "HelloWorld" contract in the left-hand sidebar, and then click on the "sayHello" function. Finally, click on the "transact" button to execute the function and retrieve the "Hello World!" message.
+Once the contract is deployed, you can interact with it by calling the mint function and burn function. Click on the "MyToken" contract in the left-hand sidebar, and then click on the "mint" function and put values of address and value. Finally, click on the "transact" button to execute the function will do the changes in totalSupply and value at that particular address. Similarly you can use burn function by giving appropriate paramters of address and value and thus clicking on the "transact" will subtract the given value from the already present value at that particular address. 
 
 ## Authors
 
