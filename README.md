@@ -1,6 +1,6 @@
 ### Creating a Token
 
-This Solidity program is a simple "CREATING A TOKEN " program that demonstrates the basic syntax and functionality of the Solidity programming language. The purpose of this program is to create a token having token name,token abbreviation, total suply.
+This Solidity program is a simple "CREATING A TOKEN " program that demonstrates the basic syntax and functionality of the Solidity programming language. The purpose of this program is to create a token having token name,token abbreviation, total supply.
 
 ## Description
 
